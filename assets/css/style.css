@@ -1,0 +1,26 @@
+.body{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.topnav{
+    display: flex;
+    background-color: aqua;
+    color: white;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+}
+a{
+    justify-content: space-between;
+    margin: 5px;
+    padding-top: 3%;
+    padding-bottom: 2px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+.contaniner{
+    display: flex;
+    
+}
