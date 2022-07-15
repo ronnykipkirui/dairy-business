@@ -1,26 +1,46 @@
-.body{
+.body {
     padding-left: 10%;
     padding-right: 10%;
 }
-.topnav{
+
+.topnav {
     display: flex;
     background-color: aqua;
-    color: white;
+    color: black;
     height: 70px;
     width: 100%;
     justify-content: space-between;
 }
-a{
-    justify-content: space-between;
-    margin: 5px;
-    padding-top: 3%;
-    padding-bottom: 2px;
-    margin: 5px;
-    color: white;
-    text-decoration: none;
+
+a {
+    
+    padding: 10px;
+  text-decoration: none;
+    color: black;
+    border: none;
+    margin-top: 20%;
+    
+    
+}
+
+.button {
+    padding: 10px;
+    height: fit-content;
+    background-color: #1f34ed;
+    color: antiquewhite;
+    border: none;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.contaniner {
+    display: flex;
+    width: 100%;
 
 }
-.contaniner{
+.image1{
     display: flex;
-    
+    width: 50%;
+    height: 200px;
+    float: left.;
 }
