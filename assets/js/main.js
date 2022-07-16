@@ -1,4 +1,4 @@
-alert("welcome to dairy business website")
+//alert("welcome to dairy business website")
 function totalProduction(milk) {
     let sumOfMilk = 0
 
