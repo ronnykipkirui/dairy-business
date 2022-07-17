@@ -32,7 +32,7 @@
     <div class="container1">
 
         <div class="image1">
-            <img height="400px" width="100%" src="./assets/images/milk 5.jpg">
+            <img height="200px" width="100%" src="./assets/images/milk 5.jpg">
 
         </div>
         <div class="right">
@@ -43,103 +43,112 @@
             </p>
         </div>
     </div>
-    <hr>
-    <div>
-        <h3>Daily milk input per litre </h3>
-    </div>
-    <div class="table">
-        <table>
-            <tr>
-                <td>monday</td>
-                <td><input class="days" type="number" id="mon" name="monday"></td>
-            </tr>
-            <tr>
-                <td>tuesday</td>
-                <td><input class="days" type="number" id="tue" name="tuesday"></td>
-            </tr>
-            <tr>
-                <td>wednesday</td>
-                <td> <input class="days" type="number" id="wed" name="wednesday"></td>
-            </tr>
-            <tr>
-                <td>thursday</td>
-                <td><input class="days" type="number" id="thur" name="thursday"></td>
-            </tr>
-            <tr>
-                <td>friday</td>
-                <td> <input class="days" type="number" id="fri" name="friday"></td>
-            </tr>
-            <tr>
-                <td>satarday</td>
-                <td><input class="days" type="number" id="sat" name="satarday"></td>
-            </tr>
-            <tr>
-                <td>sunday</td>
-                <td> <input class="days" type="number" id="sun" name="sunday"></td>
-            </tr>
-        </table>
 
-    </div>
-
-    <div class="table">
-        <div class="field_column">
-              
-               <label for="date" >Date to compute</label><label class="must">*</label><span id="date_time_info" class="error-info"></span>
-               <br>
-                <input class="input-box" id="date_time" onclick="clear_attribute('date_time_info')" type="date" name="date" >
-        </div>
-
-          <br>
-
-        <div class="field_column">
-              
-               <label for="price" >Price per Litre</label><label class="must">*</label><span id="price_info" class="error-info"></span>
-               <br>
-                <input class="input-box" id="price" onclick="clear_attribute('price_info')" type="number" name="price" >
-        </div>
-
-        <button class="btn_compute" onclick="compute()">Compute Income</button>
-    </div>
-
-        
-        
 
     <hr>
 
-    <div>
-        <h3>Milk total output cost is as follows: </h3>
-    </div>
-    <div class="" id="output">
-        
-    </div>
 
-    <hr>
     <div class="container2">
 
         <div class="each_data">
-            <p>
-                The Most Efficient<br> way to get fresh <br>milk<br>
-                <img height="40px" src="./assets/images/cow 3.jpeg"><br>
+
+            <img height="70px" src="./assets/images/cow 3.jpeg"><br>
             <p>Shade A</p>
-            </p>
+
+
+
+            <div class="field_column">
+
+                <label for="shadeA">Production Per day</label><label class="must">*</label><span id="date_time_info"
+                    class="error-info"></span>
+                <br>
+                <input class="input-box" id="shadeA" onclick="clear_attribute('shadeA_info')" type="number"
+                    name="shadeA">
+            </div>
+
+
 
         </div>
 
         <div class="each_data">
-            <p>
-                Dairy business is the <br>place to market <br>your milk<br>
-                <img height="40px" src="./assets/images/cow 2.jpeg"><br>
+
+            <img height="70px" src="./assets/images/cow 2.jpeg"><br>
             <p>Shade B</p>
-            </p>
+
+
+
+
+            <div class="field_column">
+
+                <label for="shadeB">Production Per day</label><label class="must">*</label>
+                <br>
+
+                <input class="input-box" id="shadeB" type="number" name="shadeB">
+            </div>
+
+
+
+
+
         </div>
         <div class="each_data">
-            <p>
-                Connecting Dairy farmers <br>to able customers <br>in the whole country<br>
-                <img height="40px" src="./assets/images/cow 1.jpeg"><br>
+
+            <img height="70px" src="./assets/images/cow 1.jpeg"><br>
             <p>Shade C</p>
-            </p>
+
+            <div class="field_column">
+
+                <label for="shadeC">Production Per day</label><label class="must">*</label>
+                <br>
+
+                <input class="input-box" id="shadeC" type="number" name="shadeC">
+            </div>
+
         </div>
+
+        <div class="each_data">
+
+            <img height="70px" src="./assets/images/cow 1.jpeg"><br>
+            <p>Shade D</p>
+
+            <div class="field_column">
+
+                <label for="shadeD">Production Per day</label><label class="must">*</label>
+                <br>
+
+                <input class="input-box" id="shadeD" type="number" name="shadeD">
+            </div>
+
+        </div>
+        
+
+    </div><button class="btn_compute" onclick="dailyProduction('shadeA','shadeB','shadeC','shadeD')">Compute Daily</button>
+
+    <hr>
+    <div class="table">
+        <table>
+            <tr>
+                <td>
+                    <div class="field_column">
+
+                        <label for="price">Price per Litre</label><label class="must">*</label>
+                        <br>
+                        <input class="input-box" id="price" onclick="clear_attribute('price_info')" type="number"
+                            name="price">
+                    </div>
+                </td>
+               
+                <td>
+                    <button class="btn_compute" onclick="weeklyProduction('shadeA','shadeB','shadeC','shadeD')">Compute Weekly</button>
+                </td>
+                <td>
+                    <button class="btn_compute" onclick="leap_year('shadeA','shadeB','shadeC','shadeD')">Compute Leap Year</button>
+                </td>
+            </tr>
+        </table>
     </div>
+    <hr>
+
 
     <div class="footer">
         <div class="item">
