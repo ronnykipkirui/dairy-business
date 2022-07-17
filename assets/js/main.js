@@ -1,4 +1,11 @@
 //alert("welcome to dairy business website")
+let costOfMilk= 45
+const shades =["Shade A", "Shade B", "Shade C", "Shade D"]
+
+
+
+
+
 function totalProduction(milk) {
     let sumOfMilk = 0
 
