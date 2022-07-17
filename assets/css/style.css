@@ -51,7 +51,7 @@ u {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
-    height: 400px;
+    height: fit-content;
     justify-content: space-between;
    
    
@@ -78,9 +78,9 @@ u {
     background-color: transparent;
     float: right;
     width: 100%;
-    padding: 10px 6px;
+    padding: 5px 3px;
     height: auto;
-    margin: 10px 0;
+    margin: 0px;
     justify-content: space-between;
 }
 
@@ -88,8 +88,8 @@ u {
     width: auto;
     background-color: ghostwhite;
     margin: 0.5%;
-    height: 300px;
-    min-width: 25%;
+    height: 200px;
+    min-width: 20%;
     border-radius: 4px;
     text-align: center;
     padding-top: 4px;
@@ -103,19 +103,12 @@ u {
 } 
 .table{
     display: flex;
-    padding: 5%;
-    margin-top: 20px;
+    padding: 2%;
+    flex-wrap: wrap;
+    margin-top: 10px;
     color: blue;
     
 }
-.submit{
-    display: flex;
-    margin-top: 180px;
-    margin-left: 29px;
-    background-color: #1f34ed;
-}
-
-
 
 
  /* start of footer */
@@ -148,4 +141,38 @@ u {
     margin-left: 40%;
     text-align: center;
     float: center;
+}
+
+
+.input-box {
+    padding: 4px;
+    border: #CCC 2px solid;
+    border-radius: 4px;
+    min-width: 200px;
+    width: 40%;
+}
+
+.field_column {
+    padding: 2px 1px;
+}
+.field_column-footer {
+    padding: 10px 6px;
+}
+label{
+  color: black;
+}
+.must{
+color: red;
+}
+
+.btn_compute{
+    width: fit-content;
+    border-radius: 6px;
+    height:fit-content;
+    margin: 2%;
+    border: none;
+    background-color: deepskyblue;
+}
+.btn_compute:hover{
+    background-color: lightskyblue;
 }
